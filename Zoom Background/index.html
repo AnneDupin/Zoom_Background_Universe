@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Background</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  
+<div class="etoiles">
+<img src="580b585b2edbce24c47b270b.png" alt="étoiles" class="planete">
+</div>
+
+<div class="contenu"><h1>Sous les nuages</h1></div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam veritatis, eveniet voluptates fugiat omnis amet quam quod libero sequi nobis iure fuga corrupti consequuntur, nisi rerum, itaque ducimus sit saepe repellat odio? Praesentium officia aliquam maxime sit dolor ab quis vel nostrum explicabo nam, id sunt laborum voluptatem fugiat qui impedit unde necessitatibus inventore! Vel beatae, adipisci aliquam aspernatur doloribus eligendi necessitatibus sit odit quisquam quasi esse inventore ad dolorem ab obcaecati itaque, tempore reprehenderit ullam error exercitationem sapiente commodi ex! Iure ea quas sapiente quasi officia! Atque, earum! Quidem dignissimos nihil totam ullam dolor inventore, debitis eos tempora, iusto blanditiis optio sit labore dolore quasi quibusdam! Sapiente similique ipsa quaerat corrupti aliquam adipisci eaque expedita saepe? Amet eligendi, nemo soluta ratione dolores nihil commodi praesentium aperiam cupiditate delectus possimus voluptate esse hic velit vel harum. Officia similique, aliquam expedita laborum maxime cupiditate odio voluptates laudantium dicta ipsa nesciunt, consequuntur rerum ducimus vero aperiam tempore minus excepturi harum, reiciendis amet. Dolores vel, aliquid accusamus alias omnis optio ipsum ullam illo delectus soluta, exercitationem nisi maiores. Obcaecati aliquam recusandae ut iusto voluptatibus ipsum odio labore autem sapiente atque minima consequuntur quibusdam ratione fuga amet perferendis laudantium, sequi error libero. Itaque dignissimos illum repudiandae doloremque repellat iusto, nesciunt debitis, iure repellendus voluptas perspiciatis aliquid nostrum, dolorum nisi ad velit tempora eos qui ut atque provident laudantium vero. Molestiae ut maxime hic voluptates odio minima nesciunt rem enim expedita non culpa velit dolore tenetur, ullam deleniti eaque nam aliquid eveniet, pariatur natus incidunt explicabo corporis nisi! Quibusdam dolorum nemo aperiam iusto assumenda rem expedita reiciendis. Placeat consequatur, obcaecati dolorem quasi, dolore cum illo sint, quis aspernatur beatae cumque eos. Dolor labore aspernatur et doloribus quos nesciunt deserunt accusantium recusandae blanditiis, cupiditate provident, ipsa commodi sint odit magni deleniti odio totam autem. Eaque, eos? Non maxime voluptatibus, explicabo vero dignissimos dolorem hic nostrum est repellendus culpa. Excepturi quidem quaerat ipsa sapiente eos, dignissimos, accusantium ratione reiciendis veritatis, tempore quod suscipit ipsum. Molestiae officia voluptatem magnam! Obcaecati accusantium illo cupiditate enim, non autem perspiciatis commodi qui, temporibus cumque magni labore voluptatum dolorum provident excepturi quidem delectus illum vel quos ratione consequuntur. Ut deserunt, atque fugiat doloribus sapiente aliquid cupiditate modi aspernatur. Dolores eveniet facere cumque accusamus voluptate, maiores atque temporibus vitae saepe recusandae tempore ipsum aut ducimus minus minima obcaecati iure neque autem error, alias sit consectetur. Voluptates aspernatur ab accusantium? Repudiandae ipsam quo tempore.</p>
+
+
+<script>
+
+$(window).scroll(function() {
+
+var scrollPos = $(this).scrollTop();
+console.log(scrollPos);
+
+$('.etoiles').css({
+    'background-size' : 100 + scrollPos + '%'
+})
+
+$('.planete').css ({
+    'top': 80 - scrollPos + '%'
+})
+
+})
+
+
+</script>
+
+</body>
+</html>
